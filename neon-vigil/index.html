@@ -3,35 +3,65 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Neon Vigil — Model Viewer</title>
+<title>NV Mesh Viewer</title>
 <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@4.4.0/dist/model-viewer.min.js"></script>
 <style>
 body { background-color: #0a0a12; color: #ffffff; font-family: Arial, Helvetica, sans-serif; margin: 0; text-align: center; }
 header { padding: 2rem 1rem 1rem; }
 h1 { color: #ff2da6; letter-spacing: 0.2em; margin: 0; }
 p.subtitle { color: #00e5ff; font-size: 1.25rem; margin: 0.5rem 0 0; }
+section { padding: 2rem 1rem; border-top: 2px solid #ff2da6; }
+h2 { color: #00e5ff; letter-spacing: 0.1em; margin: 0 0 1rem; }
 model-viewer { width: 100%; max-width: 900px; height: 600px; background-color: #0a0a12; margin: 1rem auto; display: block; }
-button { background-color: #ff2da6; border: 2px solid #00e5ff; color: #ffffff; cursor: pointer; font-size: 1rem; margin: 0.5rem; padding: 0.75rem 1.5rem; }
 .note { max-width: 700px; margin: 1rem auto; padding: 0 1rem; }
 </style>
 </head>
 <body>
 <header>
-<h1>NEON VIGIL</h1>
-<p class="subtitle">Model Viewer</p>
+<h1>NV Mesh Viewer</h1>
+<p class="subtitle">Scroll through the models below</p>
 </header>
 <main>
-<div>
-<button type="button" onclick="loadModel('neon-vigil/models/val17.glb')">Val 17</button>
-<button type="button" onclick="loadModel('neon-vigil/models/infinity6.glb')">Infinity 6</button>
-</div>
-<model-viewer id="viewer" src="neon-vigil/models/placeholder.glb" camera-controls auto-rotate alt="Neon Vigil 3D model" style="background-color: #0a0a12;"></model-viewer>
-<p class="note">To use a real model, drop a Neon Vigil GLB (for example Val 17 or the Infinity 6) into neon-vigil/models/ and set it as the model's src. For example, add neon-vigil/models/val17.glb or neon-vigil/models/infinity6.glb, then use the Val 17 or Infinity 6 buttons above to load it.</p>
+<section>
+<h2>infinity6-spaceship-package</h2>
+<model-viewer src="models/infinity6-spaceship-package.glb" camera-controls auto-rotate alt="infinity6-spaceship-package 3D model" style="background-color: #0a0a12;"></model-viewer>
+</section>
+<section>
+<h2>infinity6-animated-ramp-airlock</h2>
+<model-viewer src="models/infinity6-animated-ramp-airlock.glb" camera-controls auto-rotate alt="infinity6-animated-ramp-airlock 3D model" style="background-color: #0a0a12;"></model-viewer>
+</section>
+<section>
+<h2>infinity6-shapewarp</h2>
+<model-viewer src="models/infinity6-shapewarp.glb" camera-controls auto-rotate alt="infinity6-shapewarp 3D model" style="background-color: #0a0a12;"></model-viewer>
+</section>
+<section>
+<h2>infinity6-verans</h2>
+<model-viewer src="models/infinity6-verans.glb" camera-controls auto-rotate alt="infinity6-verans 3D model" style="background-color: #0a0a12;"></model-viewer>
+</section>
+<section>
+<h2>infinity6-lockfit-solid</h2>
+<model-viewer src="models/infinity6-lockfit-solid.glb" camera-controls auto-rotate alt="infinity6-lockfit-solid 3D model" style="background-color: #0a0a12;"></model-viewer>
+</section>
+<section>
+<h2>infinity6-detailed</h2>
+<model-viewer src="models/infinity6-detailed.glb" camera-controls auto-rotate alt="infinity6-detailed 3D model" style="background-color: #0a0a12;"></model-viewer>
+</section>
+<section>
+<h2>infinity6-clunky</h2>
+<model-viewer src="models/infinity6-clunky.glb" camera-controls auto-rotate alt="infinity6-clunky 3D model" style="background-color: #0a0a12;"></model-viewer>
+</section>
+<section>
+<h2>infinity6-window-proof</h2>
+<model-viewer src="models/infinity6-window-proof.glb" camera-controls auto-rotate alt="infinity6-window-proof 3D model" style="background-color: #0a0a12;"></model-viewer>
+</section>
+<section>
+<h2>infinity6-recolored</h2>
+<model-viewer src="models/infinity6-recolored.glb" camera-controls auto-rotate alt="infinity6-recolored 3D model" style="background-color: #0a0a12;"></model-viewer>
+</section>
+<section>
+<h2>infinity6-lockfit</h2>
+<model-viewer src="models/infinity6-lockfit.glb" camera-controls auto-rotate alt="infinity6-lockfit 3D model" style="background-color: #0a0a12;"></model-viewer>
+</section>
 </main>
-<script>
-function loadModel(src) {
-  document.getElementById('viewer').setAttribute('src', src);
-}
-</script>
 </body>
 </html>
